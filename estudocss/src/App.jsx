@@ -5,6 +5,7 @@ function App(){
     <div>
       <h1> estudos de CSS no react </h1>
       <Exercicio1/>
+      <hr/>
       <Exercicio2/>
     </div>
   )
