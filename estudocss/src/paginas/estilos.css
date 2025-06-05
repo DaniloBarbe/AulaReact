@@ -1,0 +1,19 @@
+.titulo {
+    color :rgb(252, 252, 252);
+    background-color: rgb(120, 202, 202);
+    text-align: center;
+    padding: 10px;
+}
+
+.destaque {
+    font-weight: bolder;
+    font-style: italic;
+    color :blueviolet; 
+
+}
+.destaque1 {
+    font-weight: bolder;
+    font-style: italic;
+    color :rgb(3, 117, 3); 
+
+}

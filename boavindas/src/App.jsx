@@ -1,9 +1,9 @@
-import Boasvindas from"./Exemplo1"
+
 
 function App(){
   return(
     <div>
-      <h1>boas vindas ao react com javascript</h1>
+      <h1> estudos de CSS no react </h1>
       <p>
         o vk é lindo e ama animais
       </p>
