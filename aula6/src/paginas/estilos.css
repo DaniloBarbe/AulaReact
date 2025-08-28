@@ -17,8 +17,27 @@ a{
     margin: 20px auto;
     border: 1px solid red;
     border-radius: 5px;
+    padding: 10px;
 }
 a:hover{
     font-size: 20px;
     color: purple;
+}
+
+
+input[type=texte], input[type=number]{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+input[type=button]
+{
+    background-color: red;
+    width: 100px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
 }
