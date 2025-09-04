@@ -6,7 +6,7 @@ export default function Exemplo1() {
     const [resultado, setResultado] = useState(null);
     function calcular() {
         let dias = Number(idade) + Number(nome);
-        setResultado("a soma foi: "+ dias +;
+        setResultado("a soma foi: "+ dias );
     
         let dias4 = Number(idade)-Number(nome);
         setResultado("a subtraçao foi: "+ dias4 );
