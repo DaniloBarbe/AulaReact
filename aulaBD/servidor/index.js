@@ -27,3 +27,33 @@ banco.connect((erro)=>{
 app.listen(PORT, ()=>{
     console.log("servidor rodando em http://localhost:" + PORT);
 });
+app.get("/aluno", (red, res) => {
+    const sql = "SELECT * FROM aluno";
+    banco.query(sql,(erro, resultados)=>{
+        if(erro){
+            console.log(erro);
+            return res.status(500).json({ error: "Erro ao consultar alunos"});
+
+        }else{
+           console.log(resultados);
+                return res.status(200).json(resultados);
+        }
+      
+    });
+
+});
+app.get("/aluno/:codigo", (red, res) => {
+    const {codigo} =req.params;
+    const sql = "SELECT * FROM alunos WHERE codigo = ?";
+    banco.query(sql,[codigo],(erro, resultados)=>{
+        if(erro){
+            console.log(erro);
+            return res.status(500).json({ error: "Erro ao consultar alunos"});
+
+        }
+        if(resultados.length === 0){
+            return res.status(404).json({ message: "Aluno não encontrado"});
+
+        }
+    return res.status(200).json(resultados[0]);
+});
